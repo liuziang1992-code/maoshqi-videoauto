@@ -1,0 +1,13 @@
+config/service.env
+.env
+*.safetensors
+*.aria2
+models/
+input/
+output/
+temp/
+logs/
+cache/
+__pycache__/
+*.pyc
+.venv/

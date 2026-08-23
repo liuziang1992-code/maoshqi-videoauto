@@ -1,0 +1,100 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_01.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_02.png"
+    }
+  },
+  "3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_03.png"
+    }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_04.png"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_05.png"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_06.png"
+    }
+  },
+  "7": {
+    "class_type": "VideoFusionSixFrameAnalyzer",
+    "inputs": {
+      "frame_01": [
+        "1",
+        0
+      ],
+      "frame_02": [
+        "2",
+        0
+      ],
+      "frame_03": [
+        "3",
+        0
+      ],
+      "frame_04": [
+        "4",
+        0
+      ],
+      "frame_05": [
+        "5",
+        0
+      ],
+      "frame_06": [
+        "6",
+        0
+      ],
+      "project_id": "project-001",
+      "video_id": "video-001",
+      "clip_id": "clip-0001",
+      "analysis_prompt": "请分析这八帧画面中的主体、场景、动作、时间变化和适合剪辑的内容。",
+      "frame_07": [
+        "9",
+        0
+      ],
+      "frame_08": [
+        "10",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "VideoFusionJsonOutput",
+    "inputs": {
+      "analysis_json": [
+        "7",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_07.png"
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "frame_08.png"
+    }
+  }
+}
